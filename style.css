@@ -1,16 +1,39 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: aquamarine;
+    background-color:darkseagreen
 }
 
 h1 {
-    color: blueviolet;
+    color: white;
+    background-color: green;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
 }
 
 h2 {
-    color: darkgoldenrod;
+    color:lightgreen;
 }
 
 p {
     color:darkslategrey
+}
+
+.profile {
+    text-align: center;
+    width: 25%;
+    margin:1%;
+    background-color: white;
+    padding:10px;
+}
+
+.content {
+    display: flex;
+    margin:auto
 }
