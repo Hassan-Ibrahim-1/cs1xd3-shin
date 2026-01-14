@@ -1,56 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(208, 234, 255)
 }
 
 h1 {
     color: white;
-    background-color: green;
+    background-color: rgb(90, 175, 218);
     text-align: center;
     margin: auto;
     padding: 1%;
 }
 
 h2 {
-    color: lightgreen;
+    color:rgb(37, 89, 138);
 }
 
 p {
-    color: darkslategrey
+    color:rgb(36, 80, 131)
 }
 
 .profile {
     text-align: center;
     width: 25%;
-    margin: 1%;
+    margin:1%;
     background-color: white;
-    padding: 10px;
+    padding:10px;
 }
 
 .content {
     display: flex;
-}
+    margin:auto
 
-
-.navbar {
-    margin: 10px;
-    text-align: right;
-    background: seagreen;
-    padding: 10px;
-
-}
-
-.navbar-element {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-}
-
-.navbar-team-name {
-    text-align: left;
 }
