@@ -17,3 +17,46 @@ a {
     text-decoration: none;
     color: lightgreen;
 }
+
+.profile {
+    text-align: center;
+    width: 25%;
+    margin: 1%;
+    background-color: white;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    margin: auto
+}
+
+#team-name {
+    font-size: 100px;
+    padding-left: 30px;
+}
+
+#victory {
+    color: gold;
+}
+
+
+#navbar {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgb(36, 69, 129);
+    padding: 20px;
+    flex: 1;
+}
+
+.navlink {
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
