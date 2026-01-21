@@ -1,86 +1,73 @@
-/*
+
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:darkseagreen
-}
-
-h1 {
-    color: white;
-    background-color: green;
-    padding: 1%;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
+    font-size: 18px;
+    background: beige;
+    max-width: 100%;
+    margin-top: 10px;
     display: flex;
-}
-
-h2 {
-    color:lightgreen;
-}
-
-p {
-    color:darkslategrey
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
-  text-decoration: none;
-  color: darkseagreen;
+    text-decoration: none;
+    color: lightgreen;
 }
 
 .profile {
     text-align: center;
     width: 25%;
-    margin:1%;
+    margin: 1%;
     background-color: white;
-    padding:10px;
+    padding: 10px;
 }
 
 .content {
     display: flex;
-    margin:auto
+    margin: auto
 }
 
 .home {
     background-color: white;
     text-align: left;
-    padding:1%;
+    padding: 1%;
 }
 
 .title {
     text-align: center;
 }
-*/
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
-    font-size: 100px;
+h1 {
     padding-left: 30px;
 }
-h2{
-    
-}
-.victory{
+
+#victory {
     color: gold;
 }
 
 
-.navbar{
+#navbar {
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-around;
     background-color: rgb(36, 69, 129);
-    padding: 20px;
-    flex: 1;
+    padding: 3%;
+    max-height: 5%;
+    width:100%;
     }
-
 .navlink{
     color: white;
     padding: 8px;
@@ -88,9 +75,21 @@ h2{
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    width:25%;
+    text-align: center;
 }
 
-.navlink:hover{
+#contianer {
+    flex:1;
+    margin-bottom: 2%;
+}
+
+#footer {
+    margin-top: auto;
+    width:100%;
+    background-color: violet;
+}
+.navlink:hover {
     background-color: rgb(255, 255, 255);
     color: #2f4f8a;
     transition: 0.3s;
