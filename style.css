@@ -53,3 +53,45 @@ a {
     text-align: center;
 }
 */
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 100px;
+    padding-left: 30px;
+}
+h2{
+    
+}
+.victory{
+    color: gold;
+}
+
+
+.navbar{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgb(36, 69, 129);
+    padding: 20px;
+    flex: 1;
+    }
+
+.navlink{
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navlink:hover{
+    background-color: rgb(255, 255, 255);
+    color: #2f4f8a;
+    transition: 0.3s;
+}
