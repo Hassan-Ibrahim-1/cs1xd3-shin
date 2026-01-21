@@ -31,8 +31,21 @@ a {
     margin: auto
 }
 
-#team-name {
-    font-size: 100px;
+.home {
+    background-color: white;
+    text-align: left;
+    padding: 1%;
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
     padding-left: 30px;
 }
 
@@ -52,11 +65,17 @@ a {
     flex: 1;
 }
 
+
 .navlink {
-    color: white;
     padding: 8px;
     border-radius: 5px;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.navlink:hover {
+    background-color: rgb(255, 255, 255);
+    color: #2f4f8a;
+    transition: 0.3s;
 }
