@@ -1,69 +1,22 @@
-/*
+
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:darkseagreen
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: white;
-    background-color: green;
-    padding: 1%;
-    display: flex;
-}
-
-h2 {
-    color:lightgreen;
-}
-
-p {
-    color:darkslategrey
-}
-
-a {
-  text-decoration: none;
-  color: darkseagreen;
-}
-
-.profile {
-    text-align: center;
-    width: 25%;
-    margin:1%;
-    background-color: white;
-    padding:10px;
-}
-
-.content {
-    display: flex;
-    margin:auto
-}
-
-.home {
-    background-color: white;
-    text-align: left;
-    padding:1%;
-}
-
-.title {
-    text-align: center;
-}
-*/
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1{
     font-size: 100px;
     padding-left: 30px;
 }
-h2{
-    
-}
+
 .victory{
     color: gold;
 }
@@ -76,8 +29,8 @@ h2{
     justify-content: center;
     justify-content: space-around;
     background-color: rgb(36, 69, 129);
-    padding: 20px;
-    flex: 1;
+    padding: 3%;
+    max-height: 5%;
     }
 .navlink{
     color: white;
@@ -86,4 +39,15 @@ h2{
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+}
+
+#contianer {
+    flex:1;
+    margin-bottom: 2%;
+}
+
+#footer {
+    margin-top: auto;
+    width:100%;
+    background-color: violet;
 }
