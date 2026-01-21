@@ -53,3 +53,20 @@ a {
     text-align: center;
 }
 */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgb(36, 69, 129);
+    padding: 20px;
+    flex: 1;
+    }
+.navlink{
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
