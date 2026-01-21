@@ -9,9 +9,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
     font-size: 18px;
     background: beige;
-    max-width: 1200px;
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 100%;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -68,6 +66,7 @@ h1 {
     background-color: rgb(36, 69, 129);
     padding: 3%;
     max-height: 5%;
+    width:100%;
     }
 .navlink{
     color: white;
@@ -76,6 +75,7 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    width:25%;
 }
 
 #contianer {
