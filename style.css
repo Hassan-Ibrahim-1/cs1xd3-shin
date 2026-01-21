@@ -53,6 +53,7 @@ a {
     text-align: center;
 }
 */
+
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -79,6 +80,7 @@ h2{
     padding: 20px;
     flex: 1;
     }
+
 .navlink{
     color: white;
     padding: 8px;
@@ -86,4 +88,10 @@ h2{
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.navlink:hover{
+    background-color: rgb(255, 255, 255);
+    color: #2f4f8a;
+    transition: 0.3s;
 }
