@@ -6,23 +6,60 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
+    font-size: 18px;
+    background: beige;
+    max-width: 1200px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-h1{
-    font-size: 100px;
+a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+.profile {
+    text-align: center;
+    width: 25%;
+    margin: 1%;
+    background-color: white;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    margin: auto
+}
+
+.home {
+    background-color: white;
+    text-align: left;
+    padding: 1%;
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
     padding-left: 30px;
 }
 
-.victory{
+#victory {
     color: gold;
 }
 
 
-.navbar{
+#navbar {
     margin: auto;
     display: flex;
     align-items: center;
@@ -50,4 +87,9 @@ h1{
     margin-top: auto;
     width:100%;
     background-color: violet;
+}
+.navlink:hover {
+    background-color: rgb(255, 255, 255);
+    color: #2f4f8a;
+    transition: 0.3s;
 }
