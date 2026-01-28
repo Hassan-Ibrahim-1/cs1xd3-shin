@@ -1,6 +1,5 @@
-
 * {
-     margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -21,7 +20,12 @@ a {
     color: lightgreen;
 }
 
-.profile {
+#about-content {
+    margin: auto;
+    display: flex;
+}
+
+.about-profile {
     text-align: center;
     width: 25%;
     margin: 1%;
@@ -29,36 +33,25 @@ a {
     padding: 10px;
 }
 
-.content {
-    display: flex;
-    margin: auto
-}
-
-.home {
-    background-color: white;
-    text-align: left;
-    padding: 1%;
-}
-
-.title {
-    text-align: center;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-    padding-left: 30px;
+#team-slogan {
+    font-size: 16px;
+    font-style: italic;
 }
 
-#victory {
+#team-slogan-victory {
     color: gold;
 }
 
+#team-name {
+    font-size: 24px;
+    font-weight: bold;
+}
 
-#navbar {
-    margin: auto;
+#header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,29 +59,40 @@ h1 {
     background-color: rgb(36, 69, 129);
     padding: 3%;
     max-height: 5%;
-    width:100%;
-    }
-.navlink{
-    color: white;
-    padding: 8px;
-    border-radius: 5px;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    width:25%;
-    text-align: center;
+    width: 100%;
 }
 
-#contianer {
-    flex:1;
-    margin-bottom: 2%;
+#team-info {
+    font-weight: bold;
+    justify-content: left;
+    text-decoration: none;
+    color: #e3dbd8;
+    width: 40%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex: 1;
+}
+
+.navlink {
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
 }
 
 #footer {
     margin-top: auto;
-    width:100%;
+    width: 100%;
     background-color: rgb(36, 69, 129);
 }
+
 .navlink:hover {
     background-color: rgb(255, 255, 255);
     color: #2f4f8a;
