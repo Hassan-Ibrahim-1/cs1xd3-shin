@@ -20,7 +20,12 @@ a {
     color: lightgreen;
 }
 
-.profile {
+#about-content {
+    margin: auto;
+    display: flex;
+}
+
+.about-profile {
     text-align: center;
     width: 25%;
     margin: 1%;
@@ -28,33 +33,23 @@ a {
     padding: 10px;
 }
 
-.content {
-    display: flex;
-    margin: auto
-}
-
-.home {
-    background-color: white;
-    text-align: left;
-    padding: 1%;
-}
-
-.title {
-    text-align: center;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-    padding-left: 30px;
+#team-slogan {
+    font-size: 16px;
+    font-style: italic;
 }
 
-#victory {
+#team-slogan-victory {
     color: gold;
 }
 
+#team-name {
+    font-size: 24px;
+    font-weight: bold;
+}
 
 #header {
     display: flex;
