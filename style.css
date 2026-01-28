@@ -1,6 +1,5 @@
-
 * {
-     margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -57,8 +56,7 @@ h1 {
 }
 
 
-#navbar {
-    margin: auto;
+#header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,29 +64,39 @@ h1 {
     background-color: rgb(36, 69, 129);
     padding: 3%;
     max-height: 5%;
-    width:100%;
-    }
-.navlink{
+    width: 100%;
+}
+
+#team-info {
+    font-weight: bold;
+    justify-content: left;
+    text-decoration: none;
+    color: #e3dbd8;
+    width: 40%;
+}
+
+#navbar {
+    justify-content: right;
+    flex: 1;
+}
+
+.navlink {
     color: white;
     padding: 8px;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    width:25%;
+    width: 25%;
     text-align: center;
-}
-
-#contianer {
-    flex:1;
-    margin-bottom: 2%;
 }
 
 #footer {
     margin-top: auto;
-    width:100%;
+    width: 100%;
     background-color: rgb(36, 69, 129);
 }
+
 .navlink:hover {
     background-color: rgb(255, 255, 255);
     color: #2f4f8a;
