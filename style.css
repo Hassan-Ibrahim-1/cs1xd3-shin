@@ -71,18 +71,19 @@ body {
 }
 
 #navbar {
-    justify-content: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
     flex: 1;
 }
 
 .navlink {
     color: white;
-    padding: 8px;
+    padding: 8px 16px;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    width: 25%;
     text-align: center;
 }
 
