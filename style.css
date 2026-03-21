@@ -45,11 +45,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#wireframe-image {
-    display: inline;
-    max-width: 400px;
-}
-
 #team-slogan {
     font-size: 16px;
     font-style: italic;
