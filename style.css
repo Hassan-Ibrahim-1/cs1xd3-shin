@@ -70,6 +70,10 @@ body {
     width: 100%;
 }
 
+#data-description-ul {
+    margin-left: 20px;
+}
+
 #team-info {
     font-weight: bold;
     justify-content: left;

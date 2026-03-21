@@ -37,30 +37,71 @@ developmental plan for Team Project, Vinsh
                 <p>
                     VINSH: Victor, Issac, Nicole, Sara, Hassan
                     <br>
-                    Client: MacPack
-                    <br>
-                    MacPack Website
+                    We will be building the MacPack website for the client.
                 </p>
                 <p class="showcase-entry-subtitle">
                     2. Purpose
                 </p>
                 <p>
-                    Purpose: The MacPack website is a hub for members to view live updates of tournament brackets, see rankings, and showcase the club.
+                    The MacPack website is a hub for members to view live updates of tournament brackets, see rankings, and showcase the club.
 
                 </p>
                 <p class="showcase-entry-subtitle">
                     3. Data Description
                 </p>
                 <p>
-                    Data Description:
-                    <br>
-                    Database for brackets and rankings
-                    <br>
-                    Passwords for log in 
-                    <br>
-                    Time of bracket
-
+                    Teams table:<br>
+                    Stores all teams that can participate in a tournament and contains basic information for each team.
                 </p>
+                <ul id="data-description-ul">
+                    <li>id - key</li>
+                    <li>name - text</li>
+                </ul>
+
+                <p>
+                    Tournaments table:<br>
+                    This table stores each tournament, its scheduled date and status.
+                </p>
+                <ul id="data-description-ul">
+                    <li>id - key</li>
+                    <li>scheduled_at - date</li>
+                    <li>status - text, “completed”, “scheduled”, “ongoing”</li>
+                </ul>
+
+                <p>
+                    Tournament teams table:<br>
+                    This table links teams to the tournaments they are participating in.
+                </p>
+                <ul id="data-description-ul">
+                    <li>tournament_id - key</li>
+                    <li>team_id - int</li>
+                </ul>
+
+                <p>
+                    Matches table:<br>
+                    This table represents each match within a tournament bracket.
+                </p>
+                <ul id="data-description-ul">
+                    <li>id - key</li>
+                    <li>tournament_id - int</li>
+                    <li>round - int</li>
+                    <li>match_number - int</li>
+                    <li>status - text, “completed”, “scheduled”, “ongoing”</li>
+                    <li>next_match_id - int</li>
+                </ul>
+
+                <p>
+                    Match participants table:<br>
+                    This table stores the two teams competing in each match and the outcome.
+                </p>
+                <ul id="data-description-ul">
+                    <li>match_id - key</li>
+                    <li>slot - key (1 or 2, left team or right team)</li>
+                    <li>team_id - integer</li>
+                    <li>source_match_id - integer</li>
+                    <li>score - integer</li>
+                    <li>is_winner - boolean</li>
+                </ul>
                 <p class="showcase-entry-subtitle">
                     4. Functions performed by the app
                 </p>
