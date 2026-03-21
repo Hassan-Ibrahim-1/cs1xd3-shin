@@ -106,11 +106,25 @@ developmental plan for Team Project, Vinsh
                     4. Functions performed by the app
                 </p>
                 <p>
-                    Functions Performed by the app:<br>
-                    <ul>Homepage with navigation bar</ul>
-                    <ul>Calendar page that shows game times</ul>
-                    <ul>Live bracket (PackBrack)</ul>
+                    Homepage with navigation bar
+                    <ul id="data-description-ul">
+                        <li>Database effect: SELECT (retrieve basic tournament information if displayed)</li>
+                        <li>Client-side: Just static ui with navigation links</li>
+                    </ul>
 
+                    Calendar page that shows game times
+                    <ul id="data-description-ul">
+                        <li>Database effect: SELECT (from matches table where status = "scheduled")</li>
+                        <li>Client-side: Match calendar that shows up coming games. This
+                        will be a grid.</li>
+                    </ul>
+
+                    Live bracket (PackBrack)
+                    <ul id="data-description-ul">
+                        <li>Database effect: SELECT (retrieve matches and match_participants), UPDATE (update match results, winners, and match status)</li>
+                        <li>Client-side: The bracket should be adjustable for 8-10 teams.
+                        It will look like a tree structure.</li>
+                    </ul>
                 </p>
                 <p class="showcase-entry-subtitle">
                     5. Roles of Team Member
