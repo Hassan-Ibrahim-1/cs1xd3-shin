@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.wireframe {
+    display: flex;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
     font-size: 18px;
