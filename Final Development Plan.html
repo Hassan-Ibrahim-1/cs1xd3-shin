@@ -16,11 +16,10 @@
             </div>
             <div id="navbar">
                 <a class="navlink" href="index.html">Home</a>
-                <a class="navlink" href="about.html">Final Developmental Plan</a>
+                <a class="navlink" href="Final Development Plan.html">Final Developmental Plan</a>
                 <a class="navlink" href="project.html">Project</a>
-                <a class="navlink" href="Development Plan.html">Dev Plan</a>
+                <a class="navlink" href="Development Plan.html">Developmental Plan</a>
                 <a class="navlink" href="showcase.html">Showcase</a>
-                <a class="navlink" href="schedule.html">Schedule</a>
             </div>
         </div>
 
@@ -38,20 +37,20 @@
                     1. Names: Your team, the client, and the app
                 </p>
                 <p>
-                    Team Name: “VINSH”  Slogan: Victory in HTML
+                    <strong>Team Name:</strong> “VINSH”  Slogan: Victory in HTML
                     <br>
-                    Group members: Victor, Isaac, Nicole, Sara, Hassan
+                   <strong> Group members:</strong> Victor, Isaac, Nicole, Sara, Hassan
                     <br>
-                    Client: MacPack McMaster Recreational Athletics Club
-
+                    <strong>Client:</strong> MacPack McMaster Recreational Athletics Club
+                    <br>
                 </p>
+                <br>
                 <p class="showcase-entry-subtitle">
                     2. Purpose
                 </p>
                 <p>
                     <strong>"MacPack" Website</strong><br>
                     Purpose: MacPack is a non-profit club of students at McMaster who are passionate about volleyball and team collaboration. The MacPack website is a hub for members and outside participants to view information about the club, updates of tournament brackets, a photo gallery, and a calendar with dates of games and more.<br>
-                    <br>
                     <br>
                     Final increment addition: 
                     Our Client for the 1XD3 final project is “MacPack”, a nonprofit club run and founded by McMaster Students. The club’s main goal is to build an inclusive community around the sport of volleyball. They do this by hosting tournaments, drop-in days and clinics. Their club is a team of around 20 executives. Their president is Richard Jiang, along with two vice presidents Ethan Kuo and Selina Sun. They have a main group of 7 executives that we will showcase on the website.
@@ -77,8 +76,8 @@
                     <br>
                     <br>
                     The live bracket system was the main and biggest request from our client. The client wanted a sports bracket that an admin can update live, during an ongoing torment. This is so the players can see the past scores and games. You can see elimination live anywhere on a screen, this eliminates problems regarding communication with teams and past scores. Also authentication issues, before a bracket was drawn onto a white board k=letting anyone change scores and games. This feature also showcases past games and resulted winners. The “PackBrack” is changed by an admin and through a database. 
-
                 </p>
+                <br>
                 <p class="showcase-entry-subtitle">
                     3. Data Description
                 </p>
@@ -184,75 +183,124 @@
                     <li>score - integer</li>
                     <li>is_winner - boolean</li>
                 </ul>
+                <br>
                 <p class="showcase-entry-subtitle">
                     4. Functions performed by the app
                 </p>
                 <p>
                     Homepage with navigation bar
                     <ul id="data-description-ul">
-                        <li>Database effect: SELECT (retrieve basic tournament information if displayed)</li>
-                        <li>Client-side: Just static ui with navigation links</li>
+                        <li>Client-side: Static UI rendering with navigation links, also contains images of MacPack team members</li>
                     </ul>
 
                     Calendar page that shows game times
                     <ul id="data-description-ul">
-                        <li>Database effect: SELECT (from matches table where status = "scheduled")</li>
-                        <li>Client-side: Match calendar that shows up coming games. This
-                        will be a grid.</li>
+                        <li>Database queries: SELECT (from matches table where status = "scheduled")</li>
+                        <li>Client-side: Dynamically render match schedule visually, and reflects updates in real time.</li>
                     </ul>
 
                     Live bracket (PackBrack)
                     <ul id="data-description-ul">
-                        <li>Database effect: SELECT (retrieve matches and match_participants), UPDATE (update match results, winners, and match status)</li>
+                        <li>Database queries: SELECT (retrieve matches and match_participants), UPDATE (update match results, winners, and match status)</li>
                         <li>Client-side: The bracket should be adjustable for 8-10 teams.
                         It will look like a tree structure.</li>
                     </ul>
+
+                    Login Page
+                    <ul id="data-description-ul">
+                        <li>Functionality: authenticates the user by taking in a password.</li>
+                        </li>Uses AJAX requests to check if the password is valid.</li>
+                        <li>The server creates a new session and sets a variable indicating that the user has been authenticated.</li>
+                    </ul>
+
+                    Logout Page
+                    <ul id="data-description-ul">
+                        <li>AJAX request sent from the client. The server destroys the current session and logs out the user.</li>
+                    </ul>
+                    
+
                 </p>
+                <br>
                 <p class="showcase-entry-subtitle">
-                    5. Roles of Team Member
+                    5. Roles of Team Members
                 </p>
-                Roles of Team Members
                 <br>Victor - Calendar page
+                <p>
+                Calendar Page Layout (calendar.html)<br>
+                Calendar Page design <br>
+                Calendar updating functions<br>
+                PHP/Database: Database for calendar
+                </p>
                 <br>Issac - PackBrack page
+                <p>packbrack.html, admin.html<br>
+                    Bracket CSS Layout<br>
+                    PackBrack and Admin JS <br>
+                    Data handling and display (both)<br>
+                    User input handling<br>
+                    Database functions, PHP files used in fetch commands
+                </p>
                 <br>Nicole - Homepage
+                <p>
+                    Overall CSS <br>
+                    Infinity Image JS (homepageAnim.js)<br>
+                    Navigation Bar CSS<br>
+                    Meet the team<br>
+                    JS/PHP for login
+
+                </p>
                 <br>Sara - PackBrack support & Gallery page
+                <p>
+                    gallery.html<br>
+                    Infinity Image JS (homepageAnim.js)<br>
+                    Design support<br>
+                    JS/PHP for login
+                </p>
                 <br>Hassan - PackBrack database lead
+                <p>
+                    login.html, added some functionality to the navigation bar<br>
+                    Bracket CSS and CSS for the login page<br>
+                    login.js and auth.js<br>
+                    Data layout and structure for the tournament side of the database<br>
+                    Database functions and SQL queries in db.php<br>
+                    PackBrack public viewing page functionality using AJAX<br>
+                    PackBrack admin page and bracket editing functionality
+                </p>
 
                 <p class="showcase-entry-subtitle">
+                    <br>
                    6. Wireframes
                 </p>
                 <div class="wireframes">
-                    <img src="images/homepageWireframe.jpg" width="400px">
-                    <img src="images/bracketWireframe.JPG" width="400px">
-                    <img src="images/calendarWireframe.JPG"  width="400px">
-                    <img src="images/galleryWireframe.JPG" width="400px">
-                    <img src="images/homepageWireframe.jpg" width="400px">
+                    <img src="images/homepageWireframeNew.jpg" width="400px">
+                    <img src="images/bracketWireframeNew.jpg" width="400px">
+                    <img src="images/calendarWireframeNew.jpg"  width="400px">
+                    <img src="images/galleryWireframeNew.jpg" width="400px">
                 </div>
-
+                <br>
                 <p class="showcase-entry-subtitle">
-                    7. The increments
+                    7. The Increments
                 </p>
                 <p>
                     Increments
                     <br>March 25th
-                    <br>a.Homepage & CSS
-                    <br>b.Create pages listed below (according to wireframes) 
-                    <br>c.Calendar
-                    <br>d.Pack bracket
-                    <br>e.Begin creating databases
+                    <br>a. Homepage & CSS
+                    <br>b. Create pages listed below (according to wireframes) 
+                    <br>c. Calendar
+                    <br>d. Pack bracket
+                    <br>e. Begin creating databases
                     <br>
                     <br>April 1st (First increment)
-                    <br>a.Calendar database
-                    <br>b.Pack bracket database
-                    <br>c.Add photos to gallery
-                    <br>d.Create admin & passwords 
+                    <br>a. Calendar database
+                    <br>b. Pack bracket database
+                    <br>c. Add photos to gallery
+                    <br>d. Create admin & passwords 
                     <br>
-                    <br>April 7th (Final delivery)
-                    <br>a.Functioning updating bracket system
-                    <br>b.Finishing touches
+                    <br>April 19th (Final delivery)
+                    <br>a. Functioning updating bracket system
+                    <br>b. Finishing touches
 
                 </p>
-
+                <br>
                 <p class="showcase-entry-subtitle">
                     8. Client Feedback
                 </p>

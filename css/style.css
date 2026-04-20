@@ -114,6 +114,7 @@ body {
     background-color: rgb(36, 69, 129);
     border-radius: 100px;
     text-align: center;
+    color: white;
 }
 
 .navlink:hover {
