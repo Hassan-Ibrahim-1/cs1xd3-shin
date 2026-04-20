@@ -130,38 +130,46 @@
 
 
                 </p>
+                <br>
                 <p>
-                    Teams table:<br>
+                    <strong>Table:</strong> <br>
                     Stores all teams that can participate in a tournament and contains basic information for each team.
                 </p>
+                <br>
                 <ul id="data-description-ul">
                     <li>id - key</li>
                     <li>name - text</li>
                 </ul>
+                <br>
 
                 <p>
-                    Tournaments table:<br>
+                    <strong>Tournaments table:</strong><br>
                     This table stores each tournament, its scheduled date and status.
                 </p>
+                <br>
                 <ul id="data-description-ul">
                     <li>id - key</li>
                     <li>scheduled_at - date</li>
                     <li>status - text, “completed”, “scheduled”, “ongoing”</li>
                 </ul>
+                <br>
 
                 <p>
-                    Tournament teams table:<br>
+                    <strong>Tournament teams table:</strong><br>
                     This table links teams to the tournaments they are participating in.
                 </p>
+                <br>
                 <ul id="data-description-ul">
                     <li>tournament_id - key</li>
                     <li>team_id - int</li>
                 </ul>
+                <br>
 
                 <p>
-                    Matches table:<br>
+                    <strong>Matches table:</strong><br>
                     This table represents each match within a tournament bracket.
                 </p>
+                <br>
                 <ul id="data-description-ul">
                     <li>id - key</li>
                     <li>tournament_id - int</li>
@@ -170,11 +178,13 @@
                     <li>status - text, “completed”, “scheduled”, “ongoing”</li>
                     <li>next_match_id - int</li>
                 </ul>
+                <br>
 
                 <p>
-                    Match participants table:<br>
+                    <strong>Match participants table:</strong><br>
                     This table stores the two teams competing in each match and the outcome.
                 </p>
+                <br>
                 <ul id="data-description-ul">
                     <li>match_id - key</li>
                     <li>slot - key (1 or 2, left team or right team)</li>
@@ -224,6 +234,9 @@
                 <p class="showcase-entry-subtitle">
                     5. Roles of Team Members
                 </p>
+                <p>For our final increment, we delegated tasks “vertically”. Each team member did HTML, CSS, JS and PHP/Database work. 
+                    This is how we efficiently split up tasks amongst 5 team members:
+                </p>
                 <br>Victor - Calendar page
                 <p>
                 Calendar Page Layout (calendar.html)<br>
@@ -254,7 +267,8 @@
                     gallery.html<br>
                     Infinity Image JS (homepageAnim.js)<br>
                     Design support<br>
-                    JS/PHP for login
+                    JS/PHP for login<br>
+                    Nav Bar CSS
                 </p>
                 <br>Hassan - PackBrack database lead
                 <p>
@@ -305,6 +319,8 @@
                 <p class="showcase-entry-subtitle">
                     8. Client Feedback
                 </p>
+                <p><strong>Prior Feedback</strong></p>
+                <br>
                 <p>
                     1. Inquiry: How many team members and how do you want the team to be shown?
                     <br> 
@@ -340,7 +356,11 @@
                     These times and dates should be in the calender.
                     <br>
                     <br>
-                    
+                    7. Inquiry: What is needed in the nav bar?
+                    <br> 
+                    Client: We want our instgram logo, with it linked to the site.
+                    <br>
+                    <br>
                 </p>
 
         <div id="footer">
