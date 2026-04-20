@@ -26,24 +26,112 @@
 
         <div id="showcase-entries">
             <div class="showcase-entry">
-                <p class="showcase-entry-title">Developmental Plan</p>
+                <p class="showcase-entry-title">Final Developmental Plan</p>
+                <p>
+                    April 20th, 2026
+                    <br>
+                    CS 1XD3, Dr. Sam Scott
+                    <br>
+                    Victor, Isaac Corman, Nicole Carter, Sara O’Coin, Hassan Ibrahim
+                </p>
                 <p class="showcase-entry-subtitle">
                     1. Names: Your team, the client, and the app
                 </p>
                 <p>
-                    VINSH: Victor, Issac, Nicole, Sara, Hassan
+                    Team Name: “VINSH”  Slogan: Victory in HTML
                     <br>
-                    We will be building the MacPack website for the client.
+                    Group members: Victor, Isaac, Nicole, Sara, Hassan
+                    <br>
+                    Client: MacPack McMaster Recreational Athletics Club
+
                 </p>
                 <p class="showcase-entry-subtitle">
                     2. Purpose
                 </p>
                 <p>
-                    The MacPack website is a hub for members to view live updates of tournament brackets, see rankings, and showcase the club.
+                    <strong>"MacPack" Website</strong><br>
+                    Purpose: MacPack is a non-profit club of students at McMaster who are passionate about volleyball and team collaboration. The MacPack website is a hub for members and outside participants to view information about the club, updates of tournament brackets, a photo gallery, and a calendar with dates of games and more.<br>
+                    <br>
+                    <br>
+                    Final increment addition: 
+                    Our Client for the 1XD3 final project is “MacPack”, a nonprofit club run and founded by McMaster Students. The club’s main goal is to build an inclusive community around the sport of volleyball. They do this by hosting tournaments, drop-in days and clinics. Their club is a team of around 20 executives. Their president is Richard Jiang, along with two vice presidents Ethan Kuo and Selina Sun. They have a main group of 7 executives that we will showcase on the website.
+                    Drop-in days are 3-4 hour periods where the club gathers at McMaster's volleyball school, assigned drop-in recreation times at the McMaster gyms like Thérèse Quigley Sport Hall (TQSH) West gym and East Aux gym. There is no membership fee or regular meetings for club members; the club wants to welcome anyone to their events at any time with no commitment. Tournaments consist of grass/beach/outdoor volleyball tournaments or indoor volleyball tournaments.  Tournaments cost a one-time payment to enter your team in a spot, teams can range from 2 players to 8 players on average. MacPacks keeps a range of 8-10 teams per tournament. These Tournaments are hosted at the Oval(grass tournament), McMaster East Aux gym (indoor tournament) or Thérèse Quigley Sport Hall (TQSH) West gym. 
+                    For MacPack, images and social media are a huge part of their club and this is their main way of attracting new participants and club executives. Instagram is the biggest outlet, in terms of showcasing their events, team and mission.<br>
+
+                    <strong>This brings us to the main functions of the website and the main purpose.</strong>
+                    <br>
+                    <br>
+                    <strong>1. Showcase the community and mission of MacPack to the public </strong> 
+                    <br>
+                    <br>
+                    The homepage consists of mission statements and simple descriptions of the club. We also have the MacPack logo presented large and an Instagram link in the navigation bar. They take great pride in their built community and team, so we have displayed their main team members and the role they take in the club. The gallery section showcases some of their favourite pictures from each event they’ve hosted. 
+                    <br>
+                    <br>
+                    <strong>2.  Calendar, to showcase drop-in days and upcoming tournaments</strong>
+                    <br>
+                    <br>
+                    The calendar is so that the general public and supporters of MacPack can easily see upcoming days where MacPack will host a Drop-In day ahead of time. Along with this, tournaments will also appear. On this tab, users can see the event information, including the location, date, time and type of event. The Calendar can also be easily changed by an admin member who possesses a password to add events to the Calendar.  The calendar has a database that is updated by the admin. More information about the database is below.
+                    <br>
+                    <br>
+                    <strong>3. Live tournament bracket system, “PackBrack.”</strong>
+                    <br>
+                    <br>
+                    The live bracket system was the main and biggest request from our client. The client wanted a sports bracket that an admin can update live, during an ongoing torment. This is so the players can see the past scores and games. You can see elimination live anywhere on a screen, this eliminates problems regarding communication with teams and past scores. Also authentication issues, before a bracket was drawn onto a white board k=letting anyone change scores and games. This feature also showcases past games and resulted winners. The “PackBrack” is changed by an admin and through a database. 
 
                 </p>
                 <p class="showcase-entry-subtitle">
                     3. Data Description
+                </p>
+                <p>
+                    Team table:
+                    Stores all teams that can participate in a tournament and contains basic information for each team. 
+                    id - key, int, AUTO_INCREMENT
+                    name - text
+                    <br>
+                    <br>
+                    Tournaments table:
+                    This table stores each tournament, its scheduled date and status.
+                    id - key, int, AUTO_INCREMENT
+                    name - text
+                    date - date
+                    <br>
+                    <br>
+                    Events table:
+                    <ul id="data-description-ul">
+                        <li>Id - key, int, AUTO_INCREMENT</li>
+                        <li>title - Event name, varchar(255)</li>
+                        <li>event_type - Type of event, varchar(50)</li>
+                        <li>event_date - Date of event, date</li>
+                        <li>event_time - Time of event, time</li>
+                        <li>location - Event location, varchar (255)</li>
+                        <li>description - Extra event details, text</li>
+                        <li>created_at - When the event was listed, timestamp</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <br>
+                    <br>
+                    Tournament match table:
+                    <ul id="data-description-ul">
+                        <li>id - key, int, AUTO_INCREMENT</li>
+                        <li>tournament_id - foreign key</li>
+                        <li>tournament_id - foreign key</li>
+                        <li>team_1_id - foreign key</li>
+                        <li>team_2_id - foreign key</li>
+                        <li>winner - tinyint (1 or 2 indicating which team won)/li>
+                        <li>score_team_1 - int</li>
+                        <li>score_team_2 - int</li>
+                        <li>level - int (indicates what match is going on, kickoff, semi final, final, etc)</li>
+                        <li>next_match_id - foreign key (what match will the winning team feed into)</li>
+                    </ul>
+                    <br>
+                    <br>
+                    Tournaments are just events that contain a date of when they will happen and also a name. The teams table is also very generic, it just contains a name column. 
+                    The tournament matches table represents individual matches. It contains the information needed to render a live bracket for a tournament. It links together what tournament the match is happening in, what teams are participating, their scores, and also the winner of the match once it is finished. 
+                    The level column represents the type of match. The actual level number and what it represents can change depending on how many teams are participating in the tournament, the server handles that logic and chooses the level number accordingly. 
+                    An example level sequence would be 1 (Kickoff) → 2(semi finals) → 3 (finals). The next match id column indicates what match the winning team will move on to; this is also used to render the bracket and draw connections between matches.
+
+
                 </p>
                 <p>
                     Teams table:<br>
@@ -209,7 +297,7 @@
                 </p>
 
         <div id="footer">
-            <p id="footer-text">2026 Vinch, McMaster University &#169;</p>
+            <p id="footer-text">2026 Vinsh, McMaster University &#169;</p>
         </div>
     </body>
 </html>
